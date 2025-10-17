@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                   // Node.js için uygun
+    "module": "CommonJS",                 // n8n Node.js ortamında çalışır
+    "lib": ["ES2020"],                    // Modern JS özellikleri
+    "declaration": true,                  // Tip tanımları üretir (.d.ts)
+    "outDir": "./dist",                   // Derlenmiş JS dosyaları burada
+    "rootDir": "./",                       // Kaynak dosya dizini
+    "strict": true,                        // TypeScript sıkı tip kontrolü
+    "esModuleInterop": true,               // import axios gibi paketler için
+    "skipLibCheck": true,                  // node_modules tip kontrolünü atlar
+    "resolveJsonModule": true,             // JSON import edebilmek için
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "nodes/**/*",
+    "credentials/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

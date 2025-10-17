@@ -1,0 +1,16 @@
+{
+  "name": "n8n-nodes-iletimerkezi",
+  "version": "1.0.0",
+  "description": "n8n custom node for Iletimerkezi SMS API",
+  "main": "nodes/IletimerkeziNode.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "n8n-workflow": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.0"
+  }
+}
